@@ -7,3 +7,15 @@ navigator.usb.getDevices().then(devices => {
         console.log(device.manufacturerName);
     });
 })
+
+
+
+
+function load_usb_deive() {
+    navigator.usb.getDevices().then(devices => {
+        devices.map(device => {
+            console.log(device.productName);
+            console.log(device.manufacturerName);
+        });
+    })
+}
